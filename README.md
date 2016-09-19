@@ -2,4 +2,5 @@
 
 
 A simple musical note editor and player in a web browser. A demo is available at:
-https://cdn.rawgit.com/Alexander-Barth/NoteEditor/master/index.html
+https://alexander-barth.github.io/NoteEditor/
+
