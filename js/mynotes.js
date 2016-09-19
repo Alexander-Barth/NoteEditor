@@ -321,6 +321,17 @@ function load(evt) {
     }
   }
 
+function loadexample() {
+    var url = 'bibabutzemann.txt';
+
+    jQuery.ajax({
+        dataType: "json",
+        url: url,
+        success: function(data) { 
+            importdata(data); 
+        }
+    });
+}
 
 // list of number power of 2
 // 2^i0, 2^(i0+1), ... 2^i1
@@ -354,6 +365,7 @@ $(document).ready(function() {
     document.getElementById('clear').addEventListener('click', clear, false);
     document.getElementById('save').addEventListener('click', save, false);
     document.getElementById('fileinput').addEventListener('change', load, false);
+    document.getElementById('loadexample').addEventListener('click', loadexample, false);
 
     loadsound();
 
@@ -411,10 +423,14 @@ $(document).ready(function() {
     });
 */
 
+    loadexample();
+
     for (var i = 0; i < 30; i++) {
         //add_note(i,i,4);
     }
     
+
+
     
     
 /*
