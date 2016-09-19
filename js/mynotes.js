@@ -322,7 +322,7 @@ function load(evt) {
   }
 
 function loadexample() {
-    var url = 'bibabutzemann.txt';
+    var url = 'bibabutzemann.json';
 
     jQuery.ajax({
         dataType: "json",
