@@ -243,15 +243,23 @@ function add_note(i,options) {
 
 
 function loadsound() {
-    var audio, nloaded;
+    var audio, nloaded, audiotype;
     var note_letters = ['C','Db','D','Eb','E','F','Gb','G','Ab','A','Bb','B'];
 
     nloaded = 0;
+
     document.getElementById('loading').style.visibility = 'visible';
+    audio = new Audio();
+    if (audio.canPlayType('audio/ogg; codecs="vorbis"') === "probably") {
+        audiotype = 'ogg';
+    }
+    else {
+        audiotype = 'mp3';
+    }
 
     for (var octave = 1; octave < 8; octave++) {
         for (var i = 0; i < note_letters.length; i++) {
-            audio = new Audio('sound/ogg/Piano.pp.' + note_letters[i] + octave + '.ogg');
+            audio = new Audio('sound/' + audiotype + '/Piano.pp.' + note_letters[i] + octave + '.' + audiotype);
 
             audio.oncanplaythrough = function() {
                 nloaded = nloaded+1;
