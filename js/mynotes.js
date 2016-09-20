@@ -243,15 +243,25 @@ function add_note(i,options) {
 
 
 function loadsound() {
-    var audio;
+    var audio, nloaded;
     var note_letters = ['C','Db','D','Eb','E','F','Gb','G','Ab','A','Bb','B'];
+
+    nloaded = 0;
+    document.getElementById('loading').style.visibility = 'visible';
 
     for (var octave = 1; octave < 8; octave++) {
         for (var i = 0; i < note_letters.length; i++) {
-            audio = new Audio('sound/Piano.pp.' + note_letters[i] + octave + '.ogg');
-            audio.onloaded = function() {
+            audio = new Audio('sound/ogg/Piano.pp.' + note_letters[i] + octave + '.ogg');
+
+            audio.oncanplaythrough = function() {
+                nloaded = nloaded+1;
+                if (nloaded == 7 * note_letters.length) {
+                    document.getElementById('loading').style.visibility = 'hidden';
+                }
                 console.log('this');
+
             }
+            audio.load();
             sounds.push(audio);
         }
     }
@@ -352,6 +362,7 @@ function rangepow2(i0,i1) {
 
 $(document).ready(function() {
     setup();    
+    document.getElementById('loading').style.visibility = 'hidden';
 
 
     var tune = null;
