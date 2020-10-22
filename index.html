@@ -32,19 +32,19 @@
     .note_marker {
     fill: none;
     pointer-events: all;
-    stroke-width: 1; 
-    stroke: rgb(200,200,255); 
+    stroke-width: 1;
+    stroke: rgb(200,200,255);
     }
 
-    .note_marker:hover { 
-    stroke: blue; 
+    .note_marker:hover {
+    stroke: blue;
     fill: blue;
     }
 
     .line_marker, .rest_marker {
       fill: none;
       pointer-events: all;
-      stroke-width: 1; 
+      stroke-width: 1;
     }
 
 
@@ -66,20 +66,20 @@
     }
 
     #test {
-    stroke-width: 1; 
-    stroke: black; 
+    stroke-width: 1;
+    stroke: black;
     }
 
     text.tab {
-       font-family: sans; 
+       font-family: sans;
        font-size: 10px;
        text-anchor: middle;
        dominant-baseline: middle;
     }
 
     circle.tab {
-       stroke-width: 1; 
-       stroke: black; 
+       stroke-width: 1;
+       stroke: black;
        fill: white;
     }
 
@@ -104,7 +104,7 @@
       <input type="radio" name="add_length" value="sharp"  id="add_sharp2" ><label for="add_sharp">Add #</label>-->
 
 
-      <label for="extra_duration">Extra duration (dots)</label>      
+      <label for="extra_duration">Extra duration (dots)</label>
       <input type="number" id="extra_duration" value="0"><br/>
 
 
@@ -112,29 +112,29 @@
       </div>
 
 
-<!--      
+<!--
       <input type="radio" name="add_line" value="line_barline" checked="checked">Add single barline
       <input type="radio" name="add_line" value="line_double">Add double barline
       <input type="radio" name="add_line" value="line_repeatstart">Add repeat start
       <input type="radio" name="add_line" value="line_repeatend">Add repeat end
-    -->  
+    -->
     </form>
   </p>
 
   <svg xmlns="http://www.w3.org/2000/svg" height="400" width="1300" version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-      
+
       <path id="note_1" transform="translate(-77,-39) scale(0.26)"
             d="m 269.17026,180.94258 c -16.46063,-5.0663 -29.44824,-18.83384 -29.44824,-31.21666 0,-35.04853 75.28094,-48.91816 106.36997,-19.59742 33.61904,31.70681 -21.24575,67.95019 -76.92173,50.81408 z m 50.21266,-8.80478 c 9.15885,-13.97817 0.40225,-41.67294 -15.46166,-48.90101 -23.29669,-10.61469 -37.57674,7.47386 -27.87379,35.30778 6.71132,19.25209 34.01579,27.81684 43.33545,13.59323 z"
-            />        
-      
-      
+            />
+
+
       <path
          id="note_2"
          transform="scale(.7) translate(-100,-88)"
          d="m 84.846631,92.406613 c -5e-6,-4.5246 2.149825,-8.52714 6.449494,-12.00763 4.299646,-3.56747 8.852225,-5.35121 13.657745,-5.35123 2.78211,2e-5 5.26916,0.73961 7.46118,2.2188 l 0,-77.266553 2.78214,0 0,84.445033 c -4e-5,4.87267 -2.06556,8.91872 -6.19658,12.13816 -4.13107,3.21943 -8.68365,4.829157 -13.657744,4.829157 -2.782148,0 -5.227051,-0.82662 -7.334718,-2.479837 -2.107683,-1.74024 -3.161522,-3.91554 -3.161517,-6.5259 m 5.81719,3.91554 c 4.468261,0 8.978687,-1.95776 13.531289,-5.8733 4.63686,-3.91553 6.9553,-6.83042 6.95533,-8.7447 -3e-5,-1.21814 -0.50587,-1.82723 -1.51753,-1.82725 -3.11938,2e-5 -7.41904,1.87077 -12.898978,5.61227 -5.395665,3.6545 -8.09349,6.69992 -8.093481,9.13625 -9e-6,1.13116 0.674447,1.69673 2.02337,1.69673" />
-      
-      <g id="note_4" transform="translate(-78,-109) scale(0.8)"> 
+
+      <g id="note_4" transform="translate(-78,-109) scale(0.8)">
         <path
            style="fill:none;stroke:#000000;stroke-width:1.95333612px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 113.13433,48.11051 0,83.14019" />
@@ -142,25 +142,25 @@
            style="fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-opacity:0.26666667;stroke-dasharray:none"
            d="m 113.47664,128.67105 a 10.898232,15.761542 59.836662 1 1 -1.46689,-2.20766" />
       </g>
-      
-      
+
+
       <path id="note_8" transform="translate(-78,-109) scale(0.8)"
             style="fill-rule:evenodd;stroke:none"
             d="m 110.9375,51.037167 0,74.531253 c -2.19436,-3.1329 -11.11823,-3.60474 -17.375,-0.15625 -7.41543,4.0871 -10.79756,11.75107 -7.5625,17.125 3.23507,5.37393 11.86582,6.43085 19.28125,2.34375 4.45154,-2.45352 7.41871,-6.2048 8.40625,-9.96875 0.45244,-2.06878 0.18854,-3.14209 0.15625,-4.59375 l 0,-52.656253 c 32.53399,8.241492 17.51919,36.811083 14.59268,46.902753 26.72779,-36.505745 -14.22819,-51.395939 -14.59268,-73.527753 z"
             />
-      
+
       <path id="note_16" transform="translate(-78,-109) scale(0.8)"
             style="fill:#000000;stroke:none"
             d="m 110.9375,51.9375 0,74.0625 c -1.8746,-2.54288 -9.75858,-4.19761 -16.5625,0.15625 -6.803921,4.35387 -10.888514,11.63438 -8.53125,15.9375 2.690747,4.91189 11.635608,7.54103 18.75,2.4375 5.14477,-3.69062 7.6185,-8.43281 8.40625,-9.84375 l 0,-44.65625 c 19.07989,11.65776 29.43114,14.99129 19.8125,41.3125 C 151.18862,103.26621 128.27477,99.576267 113,72.03125 l 0,-2.09375 c 25.86683,13.118249 20.67706,25.391418 23,32.125 C 142.43454,75.101798 119.34006,72.375773 113,53.25 l 0,-1.15625 -2.0625,-0.15625 z"
             />
-      
+
       <path id="note_32" transform="translate(-78,-109) scale(0.8)"
             style="fill:#000000;stroke:none"
             d="m 112.0746,37.817862 0.1875,87.562498 c -1.8746,-2.54288 -9.75858,-4.19761 -16.5625,0.15625 -6.80392,4.35387 -10.88851,11.63438 -8.53125,15.9375 2.69075,4.91189 11.63561,7.54103 18.75,2.4375 5.14477,-3.69062 7.6185,-8.43281 8.40625,-9.84375 l 0,-44.656248 c 18.89239,12.470268 28.18114,14.866288 18.5625,41.187498 9.44248,-12.19554 8.76194,-20.06513 3.8125,-28.21875 0.73897,-5.485187 0.77685,-9.688376 0.28125,-13.062498 C 142.3902,58.025005 123.3131,60.713145 114.3246,41.036612 l 0,-3.0625 -2.25,-0.15625 z m 2.25,18.21875 c 18.97575,10.239083 20.72077,20.273317 21.21875,28 C 131.86646,75.48974 123.038,72.884776 114.3246,58.692862 l 0,-2.65625 z m 0,15.375 c 19.23222,16.367779 19.15773,12.504158 21.46875,29.531248 -5.25073,-7.9293 -14.17979,-16.387047 -21.46875,-29.531248 z"
             />
-      
+
       <circle id="dotted_note" cx="20" cy="0" r="3" stroke-width="0" />
-      
+
       <!-- accidentals -->
 
       <path id="sharp" transform="scale(1.6) translate(-97,-444)" style="fill:#000000"
@@ -171,38 +171,38 @@
 
       <path id="flat" transform="translate(-85,-107) scale(0.78)" style="font-size:317.82015991px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans" d="m 76.082718,89.459865 0,30.818095 c -2e-6,1e-5 -2e-6,2.07737 0,6.23206 2.760333,-2.6616 5.858041,-4.02486 9.293135,-4.0898 2.146916,3e-5 3.987139,0.94133 5.520675,2.8239 1.349483,1.75278 2.054897,3.7003 2.116256,5.84256 0.0613,1.68785 -0.337388,3.63536 -1.196145,5.84255 -0.306719,0.90884 -0.981468,1.8826 -2.024245,2.92127 -0.797446,0.77901 -1.625547,1.59047 -2.484304,2.4344 -4.539231,3.50552 -9.078447,7.0435 -13.617664,10.61396 l 0,-63.438995 2.392292,0 m 7.452911,39.192415 c -0.736099,-0.90883 -1.686881,-1.36325 -2.852349,-1.36325 -1.472185,0 -2.66833,0.87638 -3.588438,2.62914 -0.674752,1.36326 -1.012126,4.57666 -1.012124,9.64021 l 0,8.37432 c 0.06134,0.25965 1.77888,-1.33081 5.152629,-4.77142 1.840216,-1.81768 3.036361,-3.95996 3.588439,-6.4268 0.245352,-0.97377 0.368034,-1.94751 0.368045,-2.92128 -1.1e-5,-2.14227 -0.552078,-3.86257 -1.656202,-5.16092" />
 
-      
+
       <!-- small horizontal line -->
-      <path id="lineh" d="m-15 0h30" stroke="#000" /> 
-      
-      
+      <path id="lineh" d="m-15 0h30" stroke="#000" />
+
+
       <g id="note_marker">
         <rect   x="-5" y="-5" width="10" height="10" />
       </g>
-      
+
       <!-- vertical lines -->
       <rect id="line_marker"  x="-3" y="0" width="6" height="80" stroke-width="1"/>
 
       <rect id="rest_marker"  x="-3" y="0" width="6" height="80" stroke-width="1"/>
-        
-      <path id="line_barline" d="m0 0v80" stroke="#000" stroke-width="2" /> 
-        
-      <path id="line_double" d="m -2 0 v 80 m 4 0 v -80" stroke="#000" stroke-width="2" /> 
-        
+
+      <path id="line_barline" d="m0 0v80" stroke="#000" stroke-width="2" />
+
+      <path id="line_double" d="m -2 0 v 80 m 4 0 v -80" stroke="#000" stroke-width="2" />
+
       <g id="line_repeatstart" stroke="#000">
-        <path d="M -3 0 V 80" stroke-width="4" /> 
-        <path d="M 3 0 V 80" stroke-width="1" /> 
+        <path d="M -3 0 V 80" stroke-width="4" />
+        <path d="M 3 0 V 80" stroke-width="1" />
         <circle cx="10" cy="47" r="2" stroke-width="0" />
         <circle cx="10" cy="33" r="2" stroke-width="0" />
       </g>
-        
+
       <!-- same as repeat start just flip left/right-->
       <g id="line_repeatend" stroke="#000">
         <use transform="scale(-1,1)" xlink:href="#line_repeatstart" />
       </g>
-          
 
-      <!-- start rest -->        
+
+      <!-- start rest -->
 
       <g
          id="rest_0.25"
@@ -294,30 +294,30 @@
        inkscape:connector-curvature="0" />
   </g>
 
-          
+
     </defs>
-    
+
     <g id="notation" transform="translate(0,70)">
       <!-- clef -->
       <path id="treble_clef" transform="translate(0,-40) scale(0.52)" d="m69.5 269c40-31.26-37.238-44.91-13.5 3 5.182 10.46 55.5 36.51 55.5-40 0-57.5-35-130.5-35-159.5s23-44.5 23-6-56.5 71.5-56.5 111.5c0 66.03 90.5 67.03 90.5 18 0-45.5-42.327-46.9-56-35.5-19.514 16.27-12.443 47.9 10.5 50-33.656-43.11 31.7-54.41 36-18 4.73 40.03-69.5 41.16-69.5-7.5 0-38.5 61.27-77.6 58.5-115.5-4-54.691-39.861-71.599-44-5-2.91 46.32 34.83 105.02 36.5 170.5 1.07 41.81-30.318 52.85-36 34z"/>
-      
-      
-      <path id="vline" d="m0 0v80" stroke="#000" fill="none"/> 
-      <path id="line" d="m0 0h1300" stroke="#000" fill="none"/> 
+
+
+      <path id="vline" d="m0 0v80" stroke="#000" fill="none"/>
+      <path id="line" d="m0 0h1300" stroke="#000" fill="none"/>
       <use xlink:href="#line" transform="translate(0 20)"/>
       <use xlink:href="#line" transform="translate(0 40)"/>
       <use xlink:href="#line" transform="translate(0 60)"/>
       <use xlink:href="#line" transform="translate(0 80)"/>
-      
-      
+
+
       <!--        <use xlink:href="#lineh" x="120" y="100"/>
                   <use xlink:href="#lineh" x="120" y="120"/>
                   <use xlink:href="#lineh" x="120" y="140"/>-->
-      
-      
-      
+
+
+
       <use xlink:href="#vline" transform="translate(1300 0)"/>
-      
+
       <g id="note_layer">
         <!--
 
@@ -327,27 +327,27 @@
             <use xlink:href="#note_8" x="300" y="10"/>
             <use xlink:href="#flat" x="300" y="10"/>
 
-    
+
             <use xlink:href="#note_8" x="100" y="15"/>
             <use xlink:href="#dotted_note" x="100" y="15"/>
             <use xlink:href="#dotted_note" x="108" y="15"/>
-            -->        
+            -->
         <!-- <use xlink:href="#sharp" y="0" /> -->
-        
+
         <!--            <use xlink:href="#note_8" x="100" y="15" style="fill: blue"/>
-                        
+
                         <use xlink:href="#note_1" x="100" y="15" />-->
-        
-        
+
+
         <!--            <use xlink:href="#note_4" x="100" y="15" />-->
-        
+
         <!--            <use xlink:href="#note_32" x="100" y="15" />-->
-        
 
 
 
-<!-- end rest -->        
-        
+
+<!-- end rest -->
+
       </g>
       <g id="note_marks_layer">
       </g>
@@ -356,63 +356,63 @@
       </g>
       <g id="rest_marks_layer">
       </g>
-      
+
     </g>
     <g id="tabulature" transform="translate(0,250)">
       <defs>
         <pattern id="grid" width="1300" height="10" patternUnits="userSpaceOnUse">
           <path d="M0 0h1300" fill="none" stroke="black" stroke-width="1"/>
         </pattern>
-        
+
         <g id="tab0">
           <circle class="tab" cx="0" cy="0" r="6"/>
           <text class="tab" x="0" y="0">0</text>
         </g>
         <g id="tab1">
           <circle class="tab" cx="0" cy="0" r="6"  />
-          <text class="tab" x="0" y="0">1</text>      
+          <text class="tab" x="0" y="0">1</text>
         </g>
         <g id="tab2">
           <circle class="tab" cx="0" cy="0" r="6"  />
-          <text class="tab" x="0" y="0">2</text>      
+          <text class="tab" x="0" y="0">2</text>
         </g>
         <g id="tab3">
           <circle class="tab" cx="0" cy="0" r="6"  />
-          <text class="tab" x="0" y="0">3</text>      
+          <text class="tab" x="0" y="0">3</text>
         </g>
         <g id="tab4">
           <circle class="tab" cx="0" cy="0" r="6"  />
-          <text class="tab" x="0" y="0">4</text>      
+          <text class="tab" x="0" y="0">4</text>
         </g>
-        
+
         <g id="tab5">
           <circle class="tab" cx="0" cy="0" r="6"  />
-          <text class="tab" x="0" y="0">5</text>      
+          <text class="tab" x="0" y="0">5</text>
         </g>
-        
+
         <g id="tab6">
           <circle class="tab" cx="0" cy="0" r="6"  />
-          <text class="tab" x="0" y="0">6</text>      
+          <text class="tab" x="0" y="0">6</text>
         </g>
-        
+
         <g id="tab7">
           <circle class="tab" cx="0" cy="0" r="6"  />
-          <text class="tab" x="0" y="0">7</text>      
+          <text class="tab" x="0" y="0">7</text>
         </g>
-        
+
       </defs>
-      
+
       <rect id="test" width="1300" height="50" fill="url(#grid)"/>
-      
+
       <g id="tabulature2" transform="translate(0,0)">
       </g>
     </g>
-    
-    
-    
+
+
+
   </svg>
 
-  
+
   <br/>
   <input type="button" id="play" value="▶" />
   <input type="button" id="stop" value="stop" />
