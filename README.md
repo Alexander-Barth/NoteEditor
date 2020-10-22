@@ -6,6 +6,12 @@ A simple musical note editor and player in a web browser.
 A demo is available at:
 https://alexander-barth.github.io/NoteEditor/
 
-Wait that the web-page is loaded completely (it needs to download several sound files) and then hit play.
+Before hiting play, you should wait until the web-page is loaded completely (it needs to download several sound files).
 
-Your web-browser must support ogg files such as Firefox and Google Chrome.
+Your web-browser must support ogg or mp3 files such as Firefox and Google Chrome.
+
+
+# Acknowledgements
+
+The [University of Iowa Electronic Music Studios](http://theremin.music.uiowa.edu/index.html) is thanked for providing the piano sounds recordings.
+ 

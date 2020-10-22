@@ -375,6 +375,10 @@ $(document).ready(function() {
 
     var tune = null;
     document.getElementById('play').addEventListener('click', function() {
+        if (tune) {
+            // already playing; stop first
+            tune.stop();
+        }
         tune = new MusicPlayer(notes,sounds);
         tune.startplay();
     }, false);
